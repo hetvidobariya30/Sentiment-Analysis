@@ -1,6 +1,6 @@
 # Sentiment-Analysis
 
-  Company Name :- CODTECH IT SOLUTIONS
+        Company Name :- CODTECH IT SOLUTIONS
 
   Name :- DOBARIYA HETVI RAMESHBHAI
 
