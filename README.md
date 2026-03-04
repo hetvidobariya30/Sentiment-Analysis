@@ -1,115 +1,145 @@
-# 📊 Sentiment-Analysis
+# 🛍️ Sentiment-Analysis
 
 # 🚀 Project Overview
 
-This project demonstrates large-scale data analysis using PySpark on the Databricks platform. The objective of this project was to analyze the dataset insta_usage_life_style.csv to uncover patterns and insights related to Instagram usage behavior and lifestyle trends.
+This project focuses on performing Sentiment Analysis on customer reviews from Flipkart using PySpark in a distributed computing environment. The dataset, “Flipkart Product reviews with sentiment Dataset.csv”, contains product review texts along with associated sentiment labels, enabling supervised machine learning for classification.
 
-With the growing influence of social media on daily life, this project focuses on understanding user engagement patterns, screen time distribution, and potential correlations between social media usage and lifestyle indicators using distributed data processing techniques.
+The main objective of this project was to analyze customer opinions, classify sentiments (Positive, Negative, Neutral), and extract meaningful insights from large-scale textual data using Spark’s distributed processing capabilities.
+
+The entire workflow was implemented in a PySpark Notebook, making it scalable and suitable for big data text analytics.
+
+# 📂 Dataset Description
+
+The dataset includes customer review information such as:
+
+Product-related details
+
+Customer review text
+
+Sentiment label (Positive / Negative / Neutral)
+
+Additional metadata related to product ratings or review characteristics (if available)
+
+This dataset represents real-world e-commerce customer feedback, making it ideal for Natural Language Processing (NLP) tasks.
 
 # 🎯 Objectives
 
-Perform scalable data analysis using PySpark.
+Perform large-scale text preprocessing using PySpark.
 
-Clean and preprocess real-world CSV data.
+Clean and transform raw review text data.
 
-Conduct exploratory data analysis (EDA).
+Convert textual data into numerical features using NLP techniques.
 
-Identify trends and behavioral patterns in Instagram usage.
+Build a machine learning model to classify customer sentiments.
 
-Leverage Databricks for efficient distributed computation.
+Evaluate the performance of the sentiment classification model.
 
-🛠️ Technologies Used
+Generate actionable insights from customer feedback.
 
-Apache Spark (PySpark)
+# ⚙️ Technologies Used
 
-Databricks
+PySpark
+
+Apache Spark MLlib
+
+Spark NLP functions
 
 Python
 
-CSV Dataset
+PySpark Notebook (Databricks / Jupyter Spark environment)
 
-# 📂 Dataset Information
+# 🔄 Project Workflow
+1️⃣ Data Loading
 
-File Name: insta_usage_life_style.csv
+Imported the CSV dataset into PySpark DataFrame.
 
-The dataset contains information about:
+Inspected schema and validated data structure.
 
-Instagram usage frequency
+Checked for missing or null values.
 
-Time spent on the platform
+2️⃣ Data Cleaning & Text Preprocessing
 
-Lifestyle-related attributes
+Removed null or empty reviews.
 
-Behavioral indicators
+Converted text to lowercase.
 
-# ⚙️ Project Workflow
+Removed punctuation, special characters, and stopwords.
 
-1️⃣ Data Ingestion
+Tokenized review text using Spark NLP functions.
 
-Uploaded CSV dataset to Databricks.
+Applied techniques like:
 
-Loaded data using PySpark DataFrame API.
+Tokenizer
 
-Verified schema and column structure.
+StopWordsRemover
 
-2️⃣ Data Cleaning & Preprocessing
+TF-IDF / CountVectorizer
 
-Handled missing/null values using dropna() and fillna()
+3️⃣ Feature Engineering
 
-Removed duplicates
+Transformed cleaned text into feature vectors.
 
-Converted data types where necessary
+Encoded sentiment labels into numeric format.
 
-Applied filtering and transformation operations
+Prepared data for machine learning classification.
 
-3️⃣ Exploratory Data Analysis (EDA)
+4️⃣ Model Building
 
-Generated descriptive statistics using describe() and summary()
+Implemented classification algorithms such as:
 
-Performed grouping and aggregation using:
+Logistic Regression
 
-groupBy()
+Naïve Bayes
 
-count()
+Decision Tree (if applied)
 
-avg()
+Trained the model using training dataset.
 
-sum()
+Generated predictions on test dataset.
 
-Identified usage patterns and behavioral trends
+5️⃣ Model Evaluation
 
-4️⃣ Insights Generation
+Evaluated performance using:
 
-Analyzed average time spent on Instagram.
+Accuracy
 
-Compared high-usage vs low-usage user groups.
+Precision
 
-Explored correlations between screen time and lifestyle attributes.
+Recall
 
-Identified behavioral patterns across different user segments.
+F1-Score
 
-# 📈 Key Insights
+Analyzed confusion matrix to assess classification performance.
 
-Clear variation observed in user engagement levels.
+# 📊 Key Insights
 
-High-usage users showed distinct lifestyle trends compared to moderate users.
+Majority of reviews reflected positive customer sentiment.
 
-Data revealed patterns in frequency and duration of Instagram usage.
+Negative reviews highlighted recurring product/service issues.
 
-Distributed computing significantly improved processing efficiency.
+Neutral reviews often lacked descriptive language.
+
+Text preprocessing significantly improved classification accuracy.
+
+Distributed processing with PySpark enhanced performance for large text datasets.
 
 # 🧠 Learning Outcomes
 
-Hands-on experience with PySpark DataFrame operations.
+Hands-on experience with Big Data text analytics.
 
-Understanding of distributed data processing using Spark.
+Practical understanding of NLP using Spark MLlib.
 
-Practical exposure to Databricks cloud environment.
+Implementation of end-to-end machine learning pipeline.
 
-Strengthened skills in data cleaning, transformation, and analysis.
+Improved skills in feature extraction and sentiment classification.
 
-Applied big data concepts to a real-world dataset.
+Exposure to scalable machine learning workflows.
 
 # 📌 Conclusion
 
-This project successfully demonstrates how Big Data technologies like PySpark and Databricks can be used to process and analyze large datasets efficiently. The workflow highlights end-to-end data processing — from ingestion and cleaning to analysis and insights generation — making it a strong foundation project for Big Data Analytics roles.
+This project successfully demonstrates the implementation of Sentiment Analysis using PySpark on real-world e-commerce review data. By leveraging Spark’s distributed computing framework, the system efficiently processes large volumes of textual data and accurately classifies customer sentiment.
+
+The project highlights practical skills in Natural Language Processing, Machine Learning, and Big Data Analytics, making it highly relevant for Data Science and Big Data Engineering roles.
+
+
+
