@@ -1,12 +1,12 @@
 # 📊 Sentiment-Analysis
 
-🚀 Project Overview
+# 🚀 Project Overview
 
 This project demonstrates large-scale data analysis using PySpark on the Databricks platform. The objective of this project was to analyze the dataset insta_usage_life_style.csv to uncover patterns and insights related to Instagram usage behavior and lifestyle trends.
 
 With the growing influence of social media on daily life, this project focuses on understanding user engagement patterns, screen time distribution, and potential correlations between social media usage and lifestyle indicators using distributed data processing techniques.
 
-🎯 Objectives
+# 🎯 Objectives
 
 Perform scalable data analysis using PySpark.
 
@@ -28,7 +28,7 @@ Python
 
 CSV Dataset
 
-📂 Dataset Information
+# 📂 Dataset Information
 
 File Name: insta_usage_life_style.csv
 
@@ -42,7 +42,7 @@ Lifestyle-related attributes
 
 Behavioral indicators
 
-⚙️ Project Workflow
+# ⚙️ Project Workflow
 
 1️⃣ Data Ingestion
 
@@ -88,7 +88,7 @@ Explored correlations between screen time and lifestyle attributes.
 
 Identified behavioral patterns across different user segments.
 
-📈 Key Insights
+# 📈 Key Insights
 
 Clear variation observed in user engagement levels.
 
@@ -98,7 +98,7 @@ Data revealed patterns in frequency and duration of Instagram usage.
 
 Distributed computing significantly improved processing efficiency.
 
-🧠 Learning Outcomes
+# 🧠 Learning Outcomes
 
 Hands-on experience with PySpark DataFrame operations.
 
@@ -110,6 +110,6 @@ Strengthened skills in data cleaning, transformation, and analysis.
 
 Applied big data concepts to a real-world dataset.
 
-📌 Conclusion
+# 📌 Conclusion
 
 This project successfully demonstrates how Big Data technologies like PySpark and Databricks can be used to process and analyze large datasets efficiently. The workflow highlights end-to-end data processing — from ingestion and cleaning to analysis and insights generation — making it a strong foundation project for Big Data Analytics roles.
